@@ -1,9 +1,17 @@
-@import url('bootstrap.css');
+@import url("bootstrap.css");
 
-*{
+* {
   border: 0;
   padding: 0;
 }
-.logo{
+.logo {
   position: absolute;
+}
+
+.notice {
+  color: #fff;
+  background: red;
+  text-transform: uppercase;
+  padding: 5px;
+  text-align: center;
 }
