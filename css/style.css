@@ -3,7 +3,18 @@
 *{
   border: 0;
   padding: 0;
+  margin: 1%;
 }
+
 .logo{
   position: absolute;
+}
+
+body {
+  margin: 3%;
+}
+
+h1 {
+  text-align: center;
+  background-color: gray;
 }
