@@ -1,0 +1,9 @@
+@import url('bootstrap.css');
+
+*{
+  border: 0;
+  padding: 0;
+}
+.logo{
+  position: absolute;
+}
