@@ -1,11 +1,27 @@
-@import url('bootstrap.css');
+@import url("bootstrap.css");
 
-*{
+* {
   border: 0;
   padding: 0;
 }
+
 .logo img{
+
   position: absolute;
   width: 200px;
   height: 250px;
+}
+#topnav {
+  padding: 20px;
+  float: right;
+  color: grey;
+}
+a {
+  box-shadow: 10px 5px 5px grey;
+  font-family: "Bree Serif", serif;
+  font-size: 20px;
+  display: inline;
+  text-align: center;
+  text-decoration: none;
+  padding: 14px 16px;
 }
