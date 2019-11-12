@@ -3,10 +3,11 @@
 * {
   border: 0;
   padding: 0;
+  margin: 1%;
 }
 
-.logo img{
 
+.logo img{
   position: absolute;
   width: 200px;
   height: 250px;
@@ -24,4 +25,15 @@ a {
   text-align: center;
   text-decoration: none;
   padding: 14px 16px;
+}
+
+body {
+  margin: 3%;
+}
+
+h1 {
+  text-align: center;
+  background-color: gray;
+  padding: 2%;
+  border-radius: 0.2rem;
 }
