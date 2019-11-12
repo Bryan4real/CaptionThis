@@ -4,8 +4,8 @@
   border: 0;
   padding: 0;
 }
-.logo{
+.logo img{
   position: absolute;
-  width: 500px;
-  height: 500px;
+  width: 200px;
+  height: 250px;
 }
