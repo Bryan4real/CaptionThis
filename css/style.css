@@ -39,6 +39,10 @@ nav ul {
   width: 20%;
 }
 
+nav ul li a {
+  color: #662e16;
+}
+
 .logo {
   width: 50%;
 }
