@@ -43,6 +43,10 @@ nav ul li a {
   color: #662e16;
 }
 
+nav ul li a:hover {
+  text-decoration: none;
+}
+
 .logo {
   width: 50%;
 }
