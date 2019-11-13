@@ -32,55 +32,7 @@ nav {
   margin-top: 0;
 }
 
-nav ul {
-  text-align: right;
-  margin-top: 1%;
-  float: right;
-  width: 55%;
-  margin-right: 5%;
-}
-nav img {
-  margin-left: 5%;
-  width: 20%;
-  float: left;
-}
 
-nav > ul > li {
-  display: inline;
-  margin-right: 5%;
-}
-
-nav > ul > li > a {
-  font-size: 20px;
-  color: #662e16;
-  text-transform: uppercase;
-
-  /* text-decoration:none; */
-  /* margin-right: 10%; */
-}
-
-nav > ul > li > a:hover {
-  background: transparent;
-  color: black;
-  padding: 1px;
-  text-decoration: none;
-}
-
-#in,
-#out {
-  font-size: 15px;
-  color: blue;
-  text-decoration: underline;
-  text-transform: none;
-}
-
-#in:hover {
-  text-decoration: none;
-}
-
-#out:hover {
-  text-decoration: none;
-}
 
 /******* Register Form *******/
 /****************************/
