@@ -27,7 +27,11 @@ body {
 
 /******* Nav bar *******/
 /**********************/
-
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
 nav ul {
   list-style: none;
   display: flex;
