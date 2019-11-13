@@ -4,63 +4,127 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CapTion</title>
-  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <title>Le-Pizza</title>
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <script src="js/jquery-3.4.1.js"></script>
   <script src="js/script.js"></script>
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="icon" href="media/favicon-32x32.png">
 </head>
 
 <body id="body">
   <div class="container-fluid">
 
     <!-- Navigation section -->
-    <nav class="fixed-top bg-black"><br>
+    <nav class=" bg-black"><br>
       <a href="#" class="brand-logo">
-        <h1><img src="images/brd.png" height="40px" width="50px" style="border-radius: 0.2em;"> <em id="logo">CaptiON thIS</em></h1>
+        <h1><img src="images/logo (1).png"></h1>
       </a>
 
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li style="font-size: px;"><a href="#home"><i class="fa fa-home fa-2x"> </i></a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#"><button  id="in"> Log In </button></a></li>
-        <li><a href="#"><button id="out">Log Out</button></a></li>
+        <li><a href="#" id="in">LogIn</a></li>
+        <li><a href="#" id="out">LogOut</a></li>
       </ul>
     </nav>
 
-    <div class="login-page">
 
-      <div class="form">
+    <div id="themain" class="container">
 
-        <form class="register-form">
-          <input type="text" placeholder="user name">
-          <input type="text" placeholder="password">
-          <input type="text" placeholder="email">
-          <button id="create">CREATE ACCOUNT</button>
-          <br><br>
-          <p class="sms">Have an Account?  <a href="#">LOGIN</a></p>
-        </form><br>
+      <!-- Home section -->
+      <div id="home">
 
-        <form class="login-form">
-          <input type="text" placeholder="user name">
-          <input type="text" placeholder="password">
-          <button>LOGIN</button>
-          <br><br>
-          <p class="sms">Don't have an Account? <a href="#">SIGN UP</a></p>
-        </form>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="login-page">
+                <div class="form">
 
+                  <form class="register-form">
+                    <input type="text" placeholder="user name">
+                    <input type="text" placeholder="password">
+                    <input type="text" placeholder="email">
+                    <button id="create">Create</button>
+                    <p class="sms">Have an Account? <a href="#"> LOG IN</a></p>
+                  </form>
+
+                  <form class="login-form">
+                    <i class="fa fa-user-o fa-3x" aria-hidden="true"></i>
+                    <input type="text" placeholder="user name">
+                    <input type="text" placeholder="password">
+                    <button>LogIn</button>
+                    <p class="sms">Don't have an Account? <a href="#"> SIGN UP</a></p>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
 
-     
+
+      <!-- about section -->
+      <div id="about">
+
+        <div class="container carousel slide" data-ride="carousel" id="slogan">
+          <div class="row">
+
+            <div class="col-md-12  black-text text-center text"></div>
+
+          </div>
+        </div>
+
+      </div>
+      <br>
+
+      <!-- Category section -->
+      <div id="inpage" class="container ">
+
+        <div class="controls-top ">
+          <h3></h3>
+        </div>
+        <br>
+
+        <div class="row active">
+          <div class="col-md-4">
+          </div>
+
+          <div class="col-md-8">
+          </div>
+
+        </div>
+      </div>
+
+      <!-- upload button & pageup arrow -->
+      <div class="container">
+
+        <div class="row active">
+
+          <div class="col-md-1">
+
+          </div>
+
+          <div class="col-md-1">
+
+          </div>
+
+        </div>
+        <br>
+      </div>
 
     </div>
+    <br>
 
-    
-      
-  
 
-    </div>
-    
+
+
+
+    <!-- end -->
+  </div>
+  </div>
+
 </body>
+
 </html>
