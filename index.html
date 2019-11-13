@@ -1,47 +1,130 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8" />
-    <title></title>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/swiper.min.css">
-  </head>
-  <body>
-    <div class="container">
-      <form action="">
-        <input type="text" placeholder="First name" required>
-        <input type="text" placeholder=" Second name" required>
-        <input type="text" placeholder="Email">
-        <input type="password" placeholder="password">
-        <input type="text" placeholder="username">
-      </form>
+<html lang="en">
 
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-  </head>
-  <body>
-       <div class="container">
-         <div class="logo">
-        <img src="images/brd.png" alt="">
-       </div>
-       <div class="row">
-        <div id="topnav">
-          <a href="index.html">HOME</a>
-          <a href="#menu">MENU</a>
-          <a href="#menu">ORDER NOW</a>
-          <a href="#contacts">CONTACT US</a>
-       </div>   
-       <div class="row">
-        <h1>I'VE GOT THE WIREFRAME. SETTLE AFTER THIS FOR CLARIFICATIONS</h1>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CAPTION</title>
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <script src="js/jquery-3.4.1.js"></script>
+  <script src="js/script.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body id="body">
+  <div class="container-fluid">
+
+    <!-- Navigation section -->
+    <nav class=" bg-black"><br>
+      <a href="#" class="brand-logo">
+        <h1><img src="images/logo (1).png"></h1>
+      </a>
+
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li style="font-size: px;"><a href="#home"><i class="fa fa-home fa-2x"> </i></a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#" id="in">LogIn</a></li>
+        <li><a href="#" id="out">LogOut</a></li>
+      </ul>
+    </nav>
+
+
+    <div id="themain" class="container">
+
+      <!-- Home section -->
+      <div id="home">
+
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="login-page">
+                <div class="form">
+
+                  <form class="register-form">
+                    <input type="text" placeholder="user name">
+                    <input type="text" placeholder="password">
+                    <input type="text" placeholder="email">
+                    <button id="create">Create</button>
+                    <p class="sms">Have an Account? <a href="#"> LOG IN</a></p>
+                  </form>
+
+                  <form class="login-form">
+                    <i class="fa fa-user-o fa-3x" aria-hidden="true"></i>
+                    <input type="text" placeholder="user name">
+                    <input type="text" placeholder="password">
+                    <button>LogIn</button>
+                    <p class="sms">Don't have an Account? <a href="#"> SIGN UP</a></p>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
-      <p>caption this : The best app in the world, trust us.</p>
 
-      <p class="notice">Please Don't Delete Files</p>
-    
+
+      <!-- about section -->
+      <div id="about">
+
+        <div class="container carousel slide" data-ride="carousel" id="slogan">
+          <div class="row">
+
+            <div class="col-md-12  black-text text-center text"></div>
+
+          </div>
+        </div>
+
+      </div>
+      <br>
+
+      <!-- Category section -->
+      <div id="inpage" class="container ">
+
+        <div class="controls-top ">
+          <h3></h3>
+        </div>
+        <br>
+
+        <div class="row active">
+          <div class="col-md-4">
+          </div>
+
+          <div class="col-md-8">
+          </div>
+
+        </div>
+      </div>
+
+      <!-- upload button & pageup arrow -->
+      <div class="container">
+
+        <div class="row active">
+
+          <div class="col-md-1">
+
+          </div>
+
+          <div class="col-md-1">
+
+          </div>
+
+        </div>
+        <br>
+      </div>
 
     </div>
+    <br>
 
-    <script src="js/jquery-3.4.1.js"></script>
-    <script src="js/swiper.min.js"></script>
-  </body>
+
+
+
+
+    <!-- end -->
+  </div>
+  </div>
+
+</body>
+
 </html>
