@@ -37,28 +37,35 @@
 
         <div class="container">
           <div class="row">
-            <div class="col-md-12">
               <div class="login-page">
-                <div class="form">
-
-                  <form class="register-form">
-                    <input type="text" placeholder="user name">
-                    <input type="text" placeholder="password">
-                    <input type="text" placeholder="email">
-                    <button id="create">Create</button>
+                                    
+                  <form onsubmit="return captionThis()" class="register-form">
+                    <h1>Register Here</h1>
+                    <p>Username</p>
+                    <input type="text" placeholder="Type Username" id="usnam">
+                    <p>Email</p>
+                    <input type="email" placeholder="Type Email" id="ema">
+                    <p>New Password</p>
+                    <input type="password" placeholder="Type New Password" id="pass">                    
+                    <p>Confirm Password</p>
+                    <input type="password" placeholder="Re-type Password" id="pass">
+                    <input type="submit" id="create" value="Sign Up">
                     <p class="sms">Have an Account? <a href="#"> LOG IN</a></p>
                   </form>
-
-                  <form class="login-form">
-                    <i class="fa fa-user-o fa-3x" aria-hidden="true"></i>
-                    <input type="text" placeholder="user name">
-                    <input type="text" placeholder="password">
-                    <button>LogIn</button>
+                  
+                  <form onsubmit="return captionThis()" class="login-form">
+                    <h1>Login Here</h1>
+                    <p>Username</p>
+                    <input type="text" placeholder="Enter Username " id="usnam">
+                    <p>Email</p>
+                    <input type="email" placeholder="Enter Email" id="ema">
+                    <p>Password</p>
+                    <input type="password" placeholder="Enter Password" id="pass">
+                    <input type="submit" onclick="logins()" value="Log In" >
                     <p class="sms">Don't have an Account? <a href="#"> SIGN UP</a></p>
                   </form>
-                </div>
+
               </div>
-            </div>
           </div>
 
         </div>
@@ -68,7 +75,7 @@
       <!-- about section -->
       <div id="about">
 
-        <div class="container carousel slide" data-ride="carousel" id="slogan">
+        <div class="container carousel slide" data-ride="carousel">
           <div class="row">
 
             <div class="col-md-12  black-text text-center text"></div>
@@ -124,6 +131,29 @@
     <!-- end -->
   </div>
   </div>
+
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-app.js"></script>
+  
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+       https://firebase.google.com/docs/web/setup#available-libraries -->
+  
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyChJtnH2WgOW-NQ6IyrpyjGxWRg0hTCYiw",
+      authDomain: "captionthis-d44db.firebaseapp.com",
+      databaseURL: "https://captionthis-d44db.firebaseio.com",
+      projectId: "captionthis-d44db",
+      storageBucket: "captionthis-d44db.appspot.com",
+      messagingSenderId: "537957902642",
+      appId: "1:537957902642:web:11ec9691c9c5dc2d4d4f2b"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+
 
 </body>
 
