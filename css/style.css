@@ -11,6 +11,13 @@
   /* border: 0; */
 }
 
+.notice {
+  color: #fff;
+  background: red;
+  text-transform: uppercase;
+  padding: 5px;
+  text-align: center;
+}
 body {
   background-color: #EA9B7A;
   height: 100vh;  
