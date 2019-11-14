@@ -20,7 +20,7 @@
   text-align: center;
 }
 body {
-  background-color: #ffbc87;
+  background-color: #e3cd6b;
   height: 100vh;
 }
 
@@ -146,6 +146,7 @@ nav ul li a:hover {
   height: 300px;
   border: 1px solid #662e16;
   text-transform: uppercase;
+  border-radius: 7px;
   margin: 10% 50%;
   transform: translatex(-50%);
 }
