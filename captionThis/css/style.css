@@ -262,6 +262,23 @@ img {
 .cursor {
   cursor: pointer;
 }
+.prev{
+  /* position: absolute; */
+  top: 40%;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+.next{
+  right: 10px;
+  /* position: absolute; */
+  top: 40%;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
