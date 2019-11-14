@@ -238,3 +238,11 @@ img {
   vertical-align: middle;
   width: 100%;
 }
+.mySlides img{
+  height: 250px;
+  width: 100%;
+} 
+.slideshow{
+  position: relative;
+  width: 550px;
+}
