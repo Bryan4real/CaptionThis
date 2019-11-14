@@ -1,13 +1,14 @@
 @import url("../css/bootstrap.css");
 @import url("../css/swiper.min.css");
 
-
 /******* Entire page *******/
 /*************************/
 
-
 * {
   scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   /* border: 0; */
 }
 
@@ -19,74 +20,142 @@
   text-align: center;
 }
 body {
-  background-color: #EA9B7A;
-  height: 100vh;  
+  background-color: #e3cd6b;
+  height: 100vh;
 }
 
 #themain {
   /* margin-top: 3%; */
 }
 
-
 /******* Nav bar *******/
 /**********************/
-
 nav {
-  margin-top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+  position: relative;
 }
 
-
-nav  ul {
- 
-  text-align:right;
-  margin-top: 1%;
-  float: right;
-  width: 55%;
-  margin-right: 5%;
-}
-nav img{
-  margin-left: 5%;
-  width: 20%;
-  float: left;
-}
-
-nav > ul > li {
-  display:inline;
-  margin-right: 5%;
-}
-
-nav > ul > li > a {
- 
-  font-size: 20px;
-  color: #662E16;
-  text-transform:uppercase;
-
-  /* text-decoration:none; */
-  /* margin-right: 10%; */
-}
-
- nav > ul > li > a:hover {
-  background:transparent;
-  color:black;
-  padding: 1px;
-  text-decoration:none;
-}
-
-#in, #out {
-  font-size: 15px;
-  color: blue;
-  text-decoration: underline;
-  text-transform: none;
-}
-
-#in:hover {
-  text-decoration: none;
-} 
-
-#out:hover {
+nav ul li a {
+  color: #662e16;
+  text-transform: uppercase;
+  display: block;
+  padding: 10px;
   text-decoration: none;
 }
 
+nav ul li:active a {
+  color: #662e16;
+  text-decoration: none;
+  border-bottom: 1px solid #662e16;
+}
+
+nav ul li a:hover {
+  color: #662e16;
+  text-decoration: none;
+  border-bottom: 1px solid #662e16;
+}
+
+.logo {
+  width: 25%;
+  margin-right: 20%;
+}
+
+/******* Sidebar *******/
+/****************************/
+.sidebar {
+  text-transform: uppercase;
+  color: #662e16;
+  position: fixed;
+  left: 10%;
+  top: 30%;
+}
+
+.sidebar ul {
+  list-style: none;
+  border: 3px solid #662e16;
+}
+
+.sidebar ul li a {
+  color: #ffbc87;
+  display: inline-block;
+  padding: 10px;
+  background: #662e16;
+  outline: none;
+  font-weight: bolder;
+  width: 150px;
+}
+
+.sidebar ul li a:hover {
+  color: #662e16;
+  background: #ffbc87;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+/******* Upload Button *******/
+/****************************/
+.upload-image {
+  position: fixed;
+  left: 10%;
+  top: 80%;
+  background: #662e16;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffbc87;
+  padding: 10px;
+}
+
+.upload-image a {
+  color: #ffbc87;
+  text-transform: uppercase;
+  padding: 5px;
+
+  display: block;
+}
+
+.upload-image a:hover {
+  text-decoration: none;
+}
+
+.upload-image a i {
+  display: inline-block;
+  margin: 10px 0;
+}
+
+.upload-image:hover {
+  background: #664435;
+  transition: all 0.5s ease;
+}
+
+/******* Register Form *******/
+/****************************/
+.image-previewer {
+  width: 500px;
+  height: 300px;
+  border: 1px solid #662e16;
+  text-transform: uppercase;
+  border-radius: 7px;
+  margin: 10% 50%;
+  transform: translatex(-50%);
+}
+
+/* .sidebar ul li a:link {
+  color: #662e16;
+  background: #ffbc87;
+  text-decoration: none;
+} */
 
 /******* Register Form *******/
 /****************************/
@@ -111,7 +180,7 @@ nav > ul > li > a {
 }
 
 .form {
-  position: relative;  
+  position: relative;
   z-index: 1;
   max-width: 360px;
   margin: 0 auto 30px;
@@ -121,7 +190,7 @@ nav > ul > li > a {
 
 .form input {
   display: block;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   background-color: #f2f2f2;
   border: 0;
   padding: 8px;
@@ -132,10 +201,10 @@ nav > ul > li > a {
 }
 
 .form button {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   background-color: transparent;
   border: 0;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 20px;
   cursor: pointer;
   text-decoration: underline;
@@ -145,7 +214,8 @@ nav > ul > li > a {
   margin-bottom: 5%;
 }
 
-.form button:hover, .form button:active {
+.form button:hover,
+.form button:active {
   border-radius: 0.2rem;
 }
 
@@ -154,7 +224,7 @@ nav > ul > li > a {
 }
 
 .form .sms a {
-  color:blue;
+  color: blue;
 }
 
 .form .sms a:hover {
