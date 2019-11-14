@@ -39,6 +39,7 @@ body {
   width: 100%;
 }
 #image-field {
+  border-radius: 15px;
   height: 100%;
   width: 100%;
 }
@@ -52,10 +53,6 @@ body {
   width: 450px;
   height: 400px;
   image-orientation: center;
-}
-
-#themain {
-  /* margin-top: 3%; */
 }
 
 /******* Nav bar *******/
@@ -188,18 +185,23 @@ nav ul li a:hover {
 #btn_comment {
   /* margin: auto; */
   float: left;
+  margin-left: 2%;
   margin-bottom: 1%;
   width: 25%;
 }
 
 #captions {
+  margin-left: 6%;
   font-size: 16px;
   color: orangered;
-  width: 140%;
+  width: 100%;
   text-align: left;
 }
 .caption {
   border-radius: 8px;
+}
+thead {
+  background: white;
 }
 td,
 th {
