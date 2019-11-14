@@ -141,14 +141,14 @@ nav ul li a:hover {
 
 /******* Register Form *******/
 /****************************/
-.image-previewer {
+/* .image-previewer {
   width: 500px;
   height: 300px;
   background: rgb(245, 230, 230); 
   margin: 10% 50%;
   transform: translatex(-50%);
   
-}
+} */
 
 /* .sidebar ul li a:link {
   color: #662e16;
@@ -239,8 +239,11 @@ img {
   width: 100%;
 }
 .mySlides img{
-  height: 250px;
-  width: 100%;
+  width: 500px;
+  height: 300px;
+  background: rgb(245, 230, 230); 
+  margin: 10% 50%;
+  transform: translatex(-50%);
 } 
 .slideshow{
   position: relative;
@@ -266,7 +269,7 @@ img {
   top: 40%;
   width: auto;
   padding: 16px;
-  margin-top: -50px;
+  margin-top: -10px;
   color: white;
   font-weight: bold;
   font-size: 20px;
@@ -275,3 +278,55 @@ img {
   -webkit-user-select: none;
 }
 
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+.active,
+.demo:hover {
+  opacity: 1;
+}
+input{
+    width: 250px;
+    height: 100px;
+}
