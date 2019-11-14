@@ -33,8 +33,11 @@ $(document).ready(function() {
   $("#btn_comment").click(function(event) {
     let caption = $("textarea#textarea").val();
     captions = new Capt(caption);
-    $("#finalorder").prepend(`<tr><td id="pName">` + captions.text + `</tr>`);
-
+    if (caption != "") {
+      $("#finalorder").prepend(`<tr><td id="pName">` + captions.text + `</tr>`);
+    } else {
+      alert("Please enter caption");
+    }
     event.preventDefault();
   });
 });
