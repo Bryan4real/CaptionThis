@@ -197,6 +197,10 @@ textarea {
   color: brown;
   font-weight: 700;
   font-family: sans-serif;
+  resize: none;
+  border: none;
+  width: 100%;
+  background: gray;
 }
 /* .sidebar ul li a:link {
   color: #662e16;
