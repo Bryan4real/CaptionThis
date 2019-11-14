@@ -85,6 +85,7 @@ nav ul li a:hover {
   padding: 10px;
   background: #662e16;
   outline: none;
+  font-weight: bolder;
   width: 150px;
 }
 
