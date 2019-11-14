@@ -53,6 +53,12 @@ nav ul li a {
   text-decoration: none;
 }
 
+nav ul li:active a {
+  color: #662e16;
+  text-decoration: none;
+  border-bottom: 1px solid #662e16;
+}
+
 nav ul li a:hover {
   color: #662e16;
   text-decoration: none;
@@ -119,10 +125,31 @@ nav ul li a:hover {
   display: block;
 }
 
+.upload-image a:hover {
+  text-decoration: none;
+}
+
 .upload-image a i {
   display: inline-block;
   margin: 10px 0;
 }
+
+.upload-image:hover {
+  background: #664435;
+  transition: all 0.5s ease;
+}
+
+/******* Register Form *******/
+/****************************/
+.image-previewer {
+  width: 500px;
+  height: 300px;
+  border: 1px solid #662e16;
+  text-transform: uppercase;
+  margin: 10% 50%;
+  transform: translatex(-50%);
+}
+
 /* .sidebar ul li a:link {
   color: #662e16;
   background: #ffbc87;
