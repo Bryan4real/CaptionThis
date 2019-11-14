@@ -69,6 +69,9 @@ nav ul li a:hover {
 .sidebar {
   text-transform: uppercase;
   color: #662e16;
+  position: fixed;
+  left: 10%;
+  top: 40%;
 }
 
 .sidebar ul {
