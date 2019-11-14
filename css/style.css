@@ -105,6 +105,7 @@ nav ul li a:hover {
   position: fixed;
   left: 10%;
   top: 30%;
+  z-index: 1;
 }
 
 .sidebar ul {

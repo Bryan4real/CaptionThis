@@ -25,5 +25,9 @@ $(document).ready(function() {
     $("#inputImage").click();
   });
 
+  $("#btn_comment").click(function(event) {
+    $("#finalorder").append(`<tr><td id="pName">`);
+  });
+
   event.preventDefault();
 });
