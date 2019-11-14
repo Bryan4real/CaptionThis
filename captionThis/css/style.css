@@ -24,9 +24,6 @@ body {
   height: 100vh;
 }
 
-#themain {
-  /* margin-top: 3%; */
-}
 
 /******* Nav bar *******/
 /**********************/
@@ -234,6 +231,7 @@ nav ul li a:hover {
   display: none;
 }
 
+/* start of the slideshow css */
 img {
   vertical-align: middle;
   width: 100%;
@@ -261,6 +259,9 @@ img {
 }
 .cursor {
   cursor: pointer;
+}
+#btns{
+  text-align: center;
 }
 .prev{
   /* position: absolute; */
@@ -322,7 +323,4 @@ img {
 .demo:hover {
   opacity: 1;
 }
-input{
-    width: 250px;
-    height: 100px;
-}
+/* end of slideshow css */
