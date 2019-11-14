@@ -91,6 +91,7 @@ nav ul li a:hover {
   color: #662e16;
   background: #ffbc87;
   text-decoration: none;
+  transition: all 0.5s ease-in;
 }
 
 /******* Register Form *******/
