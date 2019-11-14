@@ -42,6 +42,7 @@ nav ul {
   display: flex;
   justify-content: space-around;
   width: 30%;
+  position: relative;
 }
 
 nav ul li a {
@@ -58,15 +59,15 @@ nav ul li a:hover {
   border-bottom: 1px solid #662e16;
 }
 
-/* #in {
-  border-right: 1px solid #662e16;
-  padding-left: 10px;
-  display: block;
-} */
-
 .logo {
   width: 25%;
   margin-right: 20%;
+}
+
+/******* Sidebar *******/
+/****************************/
+.sidebar ul {
+  text-transform: uppercase;
 }
 
 /******* Register Form *******/
