@@ -104,6 +104,14 @@ nav ul li a:hover {
   top: 80%;
 }
 
+.upload-image a {
+  color: #ffbc87;
+  text-transform: uppercase;
+  padding: 10px;
+  background: #662e16;
+  border-radius: 5px;
+}
+
 /* .sidebar ul li a:link {
   color: #662e16;
   background: #ffbc87;
