@@ -1,5 +1,4 @@
 @import url("../css/bootstrap.css");
-@import url("../css/swiper.min.css");
 
 /******* Entire page *******/
 /*************************/
@@ -182,6 +181,23 @@ nav ul li a:hover {
   transform: translatex(-50%);
 }
 
+#captions {
+  font-size: 16px;
+  color: orangered;
+  width: 140%;
+  text-align: left;
+}
+
+td,
+th {
+  font-size: 20px;
+  color: rgb(255, 153, 0);
+}
+textarea {
+  color: brown;
+  font-weight: 700;
+  font-family: sans-serif;
+}
 /* .sidebar ul li a:link {
   color: #662e16;
   background: #ffbc87;
