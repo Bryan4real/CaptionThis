@@ -34,9 +34,9 @@ body {
   text-align: center;
 }
 
-/* #themain {
+#themain {
   /* margin-top: 3%; */
-} */
+}
 
 /******* Nav bar *******/
 /**********************/
@@ -151,6 +151,7 @@ nav ul li a:hover {
 #inputImage {
   display: none;
 }
+
 /******* Register Form *******/
 /****************************/
 .image-previewer {
