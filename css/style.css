@@ -86,6 +86,12 @@ nav ul li a:hover {
   width: 150px;
 }
 
+.sidebar ul li a:hover {
+  color: #662e16;
+  background: #ffbc87;
+  text-decoration: none;
+}
+
 /******* Register Form *******/
 /****************************/
 
