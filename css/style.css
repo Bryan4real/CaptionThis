@@ -102,16 +102,27 @@ nav ul li a:hover {
   position: fixed;
   left: 10%;
   top: 80%;
+  background: #662e16;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffbc87;
+  padding: 10px;
 }
 
 .upload-image a {
   color: #ffbc87;
   text-transform: uppercase;
-  padding: 10px;
-  background: #662e16;
-  border-radius: 5px;
+  padding: 5px;
+
+  display: block;
 }
 
+.upload-image a i {
+  display: inline-block;
+  margin: 10px 0;
+}
 /* .sidebar ul li a:link {
   color: #662e16;
   background: #ffbc87;
