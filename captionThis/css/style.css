@@ -246,3 +246,9 @@ img {
   position: relative;
   width: 550px;
 }
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;   
+}
