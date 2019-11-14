@@ -1,8 +1,8 @@
 $(document).ready(function() {
   const inpfile = document.getElementById("inputImage");
-  // const imageContainer = document.getElementById("ImagePreview");
-  // const imagePreview = document.getElementById("#image-field");
-
+  const imageContainer = document.getElementById("ImagePreview");
+  const imagePreview = document.getElementById("image-field");
+  const previewText = imageContainer.querySelector(".image-text");
   inpfile.addEventListener("change", function() {
     const file = this.files[0];
 
