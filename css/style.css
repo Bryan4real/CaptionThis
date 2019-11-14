@@ -24,6 +24,16 @@ body {
   height: 100vh;
 }
 
+#pic_container {
+  margin-top: 10%;
+}
+
+#prev {
+  width: 70%;
+  float: right;
+  text-align: center;
+}
+
 #themain {
   /* margin-top: 3%; */
 }
