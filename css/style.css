@@ -43,9 +43,11 @@ body {
   height: 100%;
   width: 100%;
 }
+
 #ImagePreview {
-  width: 100%;
-  height: 150%;
+  width: 450px;
+  height: 400px;
+  image-orientation: center;
 }
 
 #themain {
