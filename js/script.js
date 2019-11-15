@@ -35,6 +35,7 @@ $(document).ready(function() {
     captions = new Capt(caption);
     if (caption != "") {
       $("#finalorder").prepend(`<tr><td id="pName">` + captions.text + `</tr>`);
+      $("#textarea").val("");
     } else {
       alert("Please enter caption");
     }
