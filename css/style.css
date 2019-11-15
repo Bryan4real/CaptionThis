@@ -108,8 +108,10 @@ nav ul li a:hover {
 }
 
 .logo {
+  position: fixed;
   width: 25%;
-  margin-right: 20%;
+  /* margin-right: 20%; */
+  left: 4%;
 }
 
 /******* Sidebar *******/
