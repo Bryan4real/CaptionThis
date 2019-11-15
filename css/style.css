@@ -2,29 +2,6 @@
 @import url("../css/swiper.min.css");
 
 
-/******* Entire page *******/
-/*************************/
-
-
-* {
-  scroll-behavior: smooth;
-}
-
-.notice {
-  color: #fff;
-  background: red;
-  text-transform: uppercase;
-  padding: 5px;
-  text-align: center;
-}
-body {
-  margin: 0;
-  padding: 0;
-  background-color: #EA9B7A;
-}
-
-/******* Nav bar *******/
-/**********************/
 
 nav {
   margin-top: 0;
@@ -82,75 +59,50 @@ nav > ul > li > a {
 /******* Register Form *******/
 /****************************/
 
-.login-page {
-  width: 320px;
-  height: 480px;
-  background: rgba(107, 53, 2, 0.342);
-  top: 55%;
-  left: 50%;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  box-sizing: border-box;
-  border-radius: 0.2rem;
-  padding: 60px 30px;
-}
-
-.login-page h1 {
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  font-size: 25px;
-}
-
-.login-page p {
-  margin: 0;
-  padding: 0;
-  font-size: 20px;
-  font-weight: bold;
-  margin-top: 5%;
-}
-
-.login-page input {
+#regname, #regmail, #regpass, #regconfirm
+{
+  padding: 5px;
+  border: 1px solid #662E16;
   width: 100%;
-  margin-top: 3%;
+  border-radius: 5px;
 }
 
- .login-page input::placeholder {
-  color: rgba(255, 255, 255, 0.424);
-  font-style: italic;
-}
-
-.login-page input[type="text"], input[type="password"], input[type="email"] {
-  border: none;
-  border-bottom: 1px solid #fff;
-  background: transparent;
-  outline: none;
-  height: 20px ;
+#submit {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 0.2em;
+  background: #662E16;
   color: #fff;
-  font-size: 16px;
-}
-
-.login-page input[type="submit"] {
   border: none;
-  outline: none;
-  background:transparent;
-  font-size: 25px;
-  color: rgb(146, 215, 243);
+
 }
 
-.login-page input[type="submit"]:hover {
-  cursor: pointer;
-  color:blue;
-  text-decoration: underline;
-}
- .login-form i {
-  margin-bottom: 5%;
+.modal-body, .modal-header, .modal-footer {
+  background: #E3CD6B;
+  border-bottom: 1px solid #662E16;
 }
 
-.form .sms a:hover {
-  text-decoration: underline;
+.modal-title {
+  color: #662E16;
 }
 
-.register-form {
-  display: none;
+/* Sign In */
+#user, #mail, #pass {
+  padding: 5px;
+  border: 1px solid #662E16;
+  width: 100%;
+  border-radius: 5px;
+}
+
+#log-in {
+
+    display: block;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 0.2em;
+  background: #662E16;
+  color: #fff;
+  border: none;
+
 }

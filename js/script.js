@@ -1,32 +1,4 @@
 
-function captionThis() { 
-    
-	let name = document.getElementById("usnam").value;
-	let email = document.getElementById("ema").value;
-  let password = document.getElementById("pass").value;
-  
-  
-	if (name == "") {
-    window.alert("Please enter your name.");
-  name.focus();
-  return false;
-}
-
-
-if (email == "") {
-    window.alert("Please enter a valid e-mail address.");
-  email.focus();
-  return false;
-}
-
-if (password == "") {
-    window.alert("Please enter your password");
-  password.focus();
-  return false;
-}
-
-return true;
-}
 
 
 
@@ -35,17 +7,43 @@ return true;
   
 $(document).ready(function () {
 
-  $("#in").click(function (event) {
-    $("#in").animate({ height: "fadeout", opacity: "toggle" }, "slow");
-    $("#out").animate({ height: "fadeout", opacity: "toggle" }, "slow");
-    $(".login-page").fadeIn(2000);
-  })
+
 
 
   $(".sms a").click(function () {
     $("form").animate({ height: "toggle", opacity: "toggle" }, "slow");
   })
 
+  $("#submit").click(function (event) {
+    let name = $("#regname").val();
+    let email = $("#regmail").val();
+    let password = $("#regpass").val();
+    let confirm = $("#regconfirm").val();
+
+    if (name == "") {
+      $("#name-error").addClass("alert alert-danger").text("Enter Name");
+    } else if (email == "") {
+      $("#email-error").addClass("alert alert-danger").text("Enter Email");
+    } else if (password == "") {
+      $("#password-error").addClass("alert alert-danger").text("Enter Password");
+    } else if (confirm = "") {
+      $("#confirm-error").addClass("alert alert-danger").text("Confirm Password");
+    } else if (password != confirm) {
+      $("#confirm-error").addClass("alert alert-danger").text("Password Does not Match");
+    } else {
+      $("#confirm-error").val("");
+      $("#password-error").val("");
+      $("#email-error").val("");
+      $("#confirm-error").val("");
+      $("#confirm-error").val("");
+    }
+    
+    event.preventDefault();
+
+    $("#log").click(function () {
+      $(this).hide();
+    })
+  })
 
 
 
@@ -54,6 +52,12 @@ $(document).ready(function () {
 
 
 
-  event.preventDefault();
+  
 
 });
+
+
+
+
+
+
