@@ -28,7 +28,7 @@
         <img src="images/logo (1).png" class="logo" alt="Caption this logo" />
 
         <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><a href="#">About</a></li>
+          <li><a href="#" data-toggle="modal" data-target="#aboutModal">About</a></li>
           <li><a href="#" id="in">sign in</a></li>
           <li><a href="#" id="up">sign up</a></li>
         </ul>
@@ -44,39 +44,39 @@
           <li><a href="#">wildlife</a></li>
         </ul>
       </div>
-      <div
+      <!-- <div
         class="image-previewer d-flex justify-content-center align-items-center"
       >
         Preview image
-      </div>
-
-      <div id="themain">
-        <!-- Home section -->
-        <div id="home">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="login-page">
-                  <div class="form">
-                    <form class="register-form">
-                      <input type="text" placeholder="user name" />
-                      <input type="text" placeholder="password" />
-                      <input type="text" placeholder="email" />
-                      <button id="create">Create</button>
-                      <p class="sms">
-                        Have an Account? <a href="#"> LOG IN</a>
-                      </p>
-                    </form>
-
-                    <form class="login-form">
-                      <i class="fa fa-user-o fa-3x" aria-hidden="true"></i>
-                      <input type="text" placeholder="user name" />
-                      <input type="text" placeholder="password" />
-                      <button>LogIn</button>
-                      <p class="sms">
-                        Don't have an Account? <a href="#"> SIGN UP</a>
-                      </p>
-                    </form>
+      </div> -->
+          <div id ="pic_container" class="container">
+            <div id="prev" class="row">
+              <div class="col-md-6">
+                <div class="ImagePreview" id="ImagePreview">
+                  <img src="" alt="image preview" id="image-field">
+                <span class="image-text">Image Preview</span>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div id="captions">
+                    <div class="choice">
+                      <table class="table table-sm  caption">
+                        <textarea type="text" id="textarea"  rows="3" placeholder="Caption This!"></textarea>
+                        <hr>
+                        <button id="btn_comment" class="btn btn-outline-warning btn-block mg-b-5">
+                          POST
+                        </button>
+                        <thead>
+                          <tr>
+                            <th scope="col">Comments</th>
+                          </tr>
+                        </thead>
+                        <tbody id="finalorder">
+                          <tr>
+                            <td id="pName">Caption This!</td>
+                          </tr>
+                        </tbody>
+                      </table>
                   </div>
                 </div>
               </div>
@@ -85,11 +85,11 @@
         </div>
 
         <!-- about section -->
-        <div class="modal" tabindex="-1" role="dialog">
+        <div class="modal" tabindex="-1" role="dialog" id="aboutModal">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title">Modal title</h5>
+                <h5 class="modal-title">About CaptionThis!</h5>
                 <button
                   type="button"
                   class="close"
@@ -100,7 +100,9 @@
                 </button>
               </div>
               <div class="modal-body">
-                <p>Modal body text goes here.</p>
+                <p><strong>CaptionThis!&trade;</strong> is a web app where users upload images, you in turn can add witty and clever captions. Anyone can enjoy the captions, but you have to create an account to be able to upload an image or post captions.</p>
+                <p><strong>Think of us like a million memes in one.</strong></p>
+                <p>We know you've got a killer caption to share with the world.</p>
               </div>
               <div class="modal-footer">
                 <button
@@ -110,9 +112,7 @@
                 >
                   Close
                 </button>
-                <button type="button" class="btn btn-primary">
-                  Save changes
-                </button>
+                
               </div>
             </div>
           </div>
@@ -134,18 +134,34 @@
 
         <!-- upload button & pageup arrow -->
         <div class="container">
-          <div class="row active">
-            <div class="col-md-1"></div>
+              <div class="login-page">
+                <div class="form">
+                  <form class="register-form">
+                    <input type="text" placeholder="user name" />
+                    <input type="text" placeholder="password" />
+                    <input type="text" placeholder="email" />
+                    <button id="create">Create</button>
+                    <p class="sms">Have an Account? <a href="#"> LOG IN</a></p>
+                  </form>
 
-            <div class="col-md-1"></div>
-          </div>
-          <br />
+                  <form class="login-form">
+                    <i class="fa fa-user-o fa-3x" aria-hidden="true"></i>
+                    <input type="text" placeholder="user name" />
+                    <input type="text" placeholder="password" />
+                    <button>LogIn</button>
+                    <p class="sms">
+                      Don't have an Account? <a href="#"> SIGN UP</a>
+                    </p>
+                  </form>
+                </div>
+              </div>
         </div>
       </div>
-      <br />
+      <!-- -->
 
       <div class="upload-image">
-        <a href="#">Upload Image </a><i class="fas fa-plus"></i>
+        <a id="a-upload" href="#">Upload Image </a><i class="fas fa-plus"></i>
+        <input id ="inputImage" type="file" >
       </div>
 
       <script

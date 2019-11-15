@@ -1,5 +1,4 @@
 @import url("../css/bootstrap.css");
-@import url("../css/swiper.min.css");
 
 /******* Entire page *******/
 /*************************/
@@ -24,8 +23,36 @@ body {
   height: 100vh;
 }
 
-#themain {
-  /* margin-top: 3%; */
+#pic_container {
+  margin-top: 10%;
+}
+
+#prev {
+  width: 80%;
+  float: right;
+  text-align: center;
+}
+#info {
+  width: 100%;
+}
+#info table {
+  width: 100%;
+}
+#image-field {
+  border-radius: 15px;
+  height: 100%;
+  width: 100%;
+}
+.choice {
+  background-color: #e6fad0;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+}
+
+#ImagePreview {
+  width: 450px;
+  height: 400px;
+  image-orientation: center;
 }
 
 /******* Nav bar *******/
@@ -63,6 +90,7 @@ nav ul li a:hover {
   color: #662e16;
   text-decoration: none;
   border-bottom: 1px solid #662e16;
+  transition: 0.8s ease-in;
 }
 
 .logo {
@@ -78,6 +106,7 @@ nav ul li a:hover {
   position: fixed;
   left: 10%;
   top: 30%;
+  z-index: 1;
 }
 
 .sidebar ul {
@@ -138,6 +167,9 @@ nav ul li a:hover {
   background: #664435;
   transition: all 0.5s ease;
 }
+#inputImage {
+  display: none;
+}
 
 /******* Register Form *******/
 /****************************/
@@ -150,7 +182,43 @@ nav ul li a:hover {
   margin: 10% 50%;
   transform: translatex(-50%);
 }
+#btn_comment {
+  /* margin: auto; */
+  float: left;
+  margin-left: 2%;
+  margin-bottom: 1%;
+  width: 25%;
+}
 
+#captions {
+  margin-left: 6%;
+  font-size: 16px;
+  color: orangered;
+  width: 100%;
+  text-align: left;
+}
+.caption {
+  border-radius: 8px;
+}
+thead {
+  background: white;
+  color: #e3cd6b;
+  font-size: 20px;
+}
+td {
+  font-size: 16px;
+  color: rgb(255, 153, 0);
+}
+textarea {
+  padding: 10px;
+  color: brown;
+  font-weight: 700;
+  font-family: sans-serif;
+  resize: none;
+  border: none;
+  width: 100%;
+  background: none;
+}
 /* .sidebar ul li a:link {
   color: #662e16;
   background: #ffbc87;
