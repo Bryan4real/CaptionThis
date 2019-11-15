@@ -52,4 +52,16 @@ $(document).ready(function() {
     }
     event.preventDefault();
   });
+  $("#btn_comment2").click(function(event) {
+    let caption = $("textarea#textarea2").val();
+    captions = new Capt(caption);
+    if (caption != "") {
+      $("#finalorder2").prepend(
+        `<tr><td id="pName2">` + captions.text + `</tr>`
+      );
+    } else {
+      alert("Please enter caption");
+    }
+    event.preventDefault();
+  });
 });
