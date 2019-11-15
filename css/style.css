@@ -198,7 +198,9 @@ nav ul li a:hover {
   margin: 10% 50%;
   transform: translatex(-50%);
 }
-#btn_comment {
+#btn_comment,
+#btn_comment1,
+#btn_comment2 {
   /* margin: auto; */
   float: left;
   margin-left: 2%;
@@ -223,7 +225,7 @@ thead {
 }
 td {
   font-size: 16px;
-  color: rgb(255, 153, 0);
+  color: black;
 }
 textarea {
   padding: 10px;
