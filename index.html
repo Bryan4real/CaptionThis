@@ -1,101 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CAPTION</title>
+    <script
+      src="https://kit.fontawesome.com/2ae247d80b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/modal.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" href="css/modal/modal.css" type="text/css">
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CAPTION</title>
-  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
-    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <script src="js/jquery-3.4.1.js"></script>
-  <script src="js/script.js"></script>
-  <script src="js/modal.js"></script>
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="stylesheet" href="css/modal.css" type="text/css">
-</head>
-
-<body id="body">
-  <div class="container-fluid">
-
-    <!-- Navigation section -->
-    <nav>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="#" id="in" data-toggle="modal" data-target="#sign-up">Sign Up</a></li>
-        <li><a href="#" id="out" data-toggle="modal" data-target="#sign-in">Sign In</a></li>
-      </ul>
-    </nav>
-
-        <!-- Login Page -->
-
-        <!-- Sign-Up Form as a modal -->
-        <div class="modal" tabindex="-1" role="dialog" id="sign-up">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h2 class="modal-title">Register Here</h2>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
+  <body id="body">
+    <div class="container-fluid">
+      <!-- Navigation section -->
+      <nav class=" bg-black mt-4">
+        <br />
+        <div class="loggo">
+          <img src="images/logo (1).png" class="logo" alt="Caption this logo" />
+        </div>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="#">About</a></li>
+          <li><a href="#" id="in" data-toggle="modal" data-target="#sign-up">Sign Up</a></li>
+          <li><a href="#" id="out" data-toggle="modal" data-target="#sign-in">Sign In</a></li>
+        </ul>
+      </nav>
+  
+              <!-- Login Page -->
+              
+              <!-- Sign-Up Form as a modal -->
+              <div class="modal" tabindex="-1" role="dialog" id="sign-up">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h2 class="modal-title">Register Here</h2>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+              
+                      <p id="name-error"></p>
+                      <input type="text" name="regname" placeholder="Type Username" id="regname" />
+                      <p id="email-error"></p>
+                      <input type="email" name="regmail" placeholder="Type Email" id="regmail">
+                      <p id="password-error"></p>
+                      <input type="password" name="regpass" placeholder="Enter Password" id="regpass">
+                      <p id="confirm-error"></p>
+                      <input type="password" name="regpass" placeholder="Confirm Password;" id="regconfirm">
+                      <input type="submit" id="submit" value="Sign Up">
+                      <p class="sms">Have an Account? <a href="#" id="log"> LOG IN</a></p>
+              
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="modal-body">
-                     
-                  <p id="name-error"></p>
-                  <input type="text" name="regname" placeholder="Type Username" id="regname" />
-                  <p id="email-error"></p>
-                  <input type="email" name="regmail" placeholder="Type Email" id="regmail">
-                  <p id="password-error"></p>
-                  <input type="password" name="regpass" placeholder="Enter Password" id="regpass">
-                  <p id="confirm-error"></p>
-                  <input type="password" name="regpass" placeholder="Confirm Password;" id="regconfirm">
-                  <input type="submit" id="submit" value="Sign Up">
-                  <p class="sms">Have an Account? <a href="#" id="log"> LOG IN</a></p>
-
+              
+              <!-- Log-In Modal -->
+              <div class="modal" tabindex="-1" role="dialog" id="sign-in">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h2 class="modal-title">Sign In Here</h2>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+              
+              
+                      <p></p>
+                      <input type="text" placeholder="Enter Username " id="user">
+                      <p></p>
+                      <input type="email" placeholder="Enter Email" id="mail">
+                      <p></p>
+                      <input type="password" placeholder="Enter Password" id="pass">
+                      <input type="submit" value="Log In" id="log-in">
+                      <p class="sms">Don't have an Account? <a href="#" data-toggle="modal" data-target="#sign-up"> SIGN UP</a></p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                
+
+      <div class="sidebar">
+        <h4>categories</h4>
+        <ul>
+          <li><a href="#">sports</a></li>
+          <li><a href="#">politics</a></li>
+          <li><a href="#">hillarious</a></li>
+          <li><a href="#">food</a></li>
+          <li><a href="#">wildlife</a></li>
+        </ul>
+      </div>
+      <!-- <div
+        class="image-previewer d-flex justify-content-center align-items-center"
+      >
+        Preview image
+      </div> -->
+          <div id ="pic_container" class="container">
+            <div id="prev" class="row">
+              <div class="col-md-6">
+                <div class="ImagePreview" id="ImagePreview">
+                  <img src="" alt="image preview" id="image-field">
+                <span class="image-text">Image Preview</span>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div id="captions">
+                    <div class="choice">
+                      <table class="table table-sm  caption">
+                        <textarea type="text" id="textarea"  rows="3" placeholder="Caption This!"></textarea>
+                        <hr>
+                        <button id="btn_comment" class="btn btn-outline-warning btn-block mg-b-5">
+                          POST
+                        </button>
+                        <thead>
+                          <tr>
+                            <th scope="col">Comments</th>
+                          </tr>
+                        </thead>
+                        <tbody id="finalorder">
+                          <tr>
+                            <td id="pName">Caption This!</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
+    <div id="themain">
+      <!-- Home section -->
+      <div id="home">
+        <div class="container">
+              <div class="login-page">
+                <div class="form">
+                  <form class="register-form">
+                    <input type="text" placeholder="user name" />
+                    <input type="text" placeholder="password" />
+                    <input type="text" placeholder="email" />
+                    <button id="create">Create</button>
+                    <p class="sms">Have an Account? <a href="#"> LOG IN</a></p>
+                  </form>
+
+                  <form class="login-form">
+                    <i class="fa fa-user-o fa-3x" aria-hidden="true"></i>
+                    <input type="text" placeholder="user name" />
+                    <input type="text" placeholder="password" />
+                    <button>LogIn</button>
+                    <p class="sms">
+                      Don't have an Account? <a href="#"> SIGN UP</a>
+                    </p>
+                  </form>
+                </div>
+              </div>
         </div>
+      </div>
+      <!-- -->
 
-        <!-- Log-In Modal -->
-        <div class="modal" tabindex="-1" role="dialog" id="sign-in">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h2 class="modal-title">Sign In Here</h2>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-        
-                        
-                        <p></p>
-                        <input type="text" placeholder="Enter Username " id="user">
-                        <p></p>
-                        <input type="email" placeholder="Enter Email" id="mail">
-                        <p></p>
-                        <input type="password" placeholder="Enter Password" id="pass">
-                        <input type="submit" value="Log In" id="log-in">
-                        <p class="sms">Don't have an Account? <a href="#"  data-toggle="modal" data-target="#sign-up"> SIGN UP</a></p>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="upload-image">
+        <a id="a-upload" href="#">Upload Image </a><i class="fas fa-plus"></i>
+        <input id ="inputImage" type="file" >
+      </div>
 
-  </div>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-</body>
-
+      <!-- end -->
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
 </html>

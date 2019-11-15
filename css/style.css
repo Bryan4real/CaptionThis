@@ -1,0 +1,311 @@
+@import url("../css/bootstrap.css");
+
+/******* Entire page *******/
+/*************************/
+
+* {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 0; */
+}
+
+.notice {
+  color: #fff;
+  background: red;
+  text-transform: uppercase;
+  padding: 5px;
+  text-align: center;
+}
+body {
+  background-color: #e3cd6b;
+  height: 100vh;
+}
+
+#pic_container {
+  margin-top: 10%;
+}
+
+#prev {
+  width: 80%;
+  float: right;
+  text-align: center;
+}
+#info {
+  width: 100%;
+}
+#info table {
+  width: 100%;
+}
+#image-field {
+  border-radius: 15px;
+  height: 100%;
+  width: 100%;
+}
+.choice {
+  background-color: #e6fad0;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+}
+
+#ImagePreview {
+  width: 450px;
+  height: 400px;
+  image-orientation: center;
+}
+
+/******* Nav bar *******/
+/**********************/
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+  margin-top: 2%;
+  left: 15%;
+  font-size: 25px;
+  position: relative;
+}
+
+nav ul li a {
+  color: #662e16;
+  text-transform: uppercase;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+     
+}
+
+nav ul li:active a {
+  color: #662e16;
+  text-decoration: none;
+  border-bottom: 1px solid #662e16;
+}
+
+nav ul li a:hover {
+  color: #662e16;
+  text-decoration: none;
+  border-bottom: 1px solid #662e16;
+}
+
+.logo {
+  position: fixed;
+  width: 25%;
+  /* margin-right: 20%; */
+  left: 5%;
+}
+
+
+
+/******* Sidebar *******/
+/****************************/
+.sidebar {
+  text-transform: uppercase;
+  color: #662e16;
+  position: fixed;
+  left: 10%;
+  top: 30%;
+  z-index: 1;
+}
+
+.sidebar ul {
+  list-style: none;
+  border: 3px solid #662e16;
+}
+
+.sidebar ul li a {
+  color: #ffbc87;
+  display: inline-block;
+  padding: 10px;
+  background: #662e16;
+  outline: none;
+  font-weight: bolder;
+  width: 150px;
+}
+
+.sidebar ul li a:hover {
+  color: #662e16;
+  background: #ffbc87;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+/******* Upload Button *******/
+/****************************/
+.upload-image {
+  position: fixed;
+  left: 10%;
+  top: 80%;
+  background: #662e16;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffbc87;
+  padding: 10px;
+}
+
+.upload-image a {
+  color: #ffbc87;
+  text-transform: uppercase;
+  padding: 5px;
+
+  display: block;
+}
+
+.upload-image a:hover {
+  text-decoration: none;
+}
+
+.upload-image a i {
+  display: inline-block;
+  margin: 10px 0;
+}
+
+.upload-image:hover {
+  background: #664435;
+  transition: all 0.5s ease;
+}
+#inputImage {
+  display: none;
+}
+
+/******* Register Form *******/
+/****************************/
+.image-previewer {
+  width: 500px;
+  height: 300px;
+  border: 1px solid #662e16;
+  text-transform: uppercase;
+  border-radius: 7px;
+  margin: 10% 50%;
+  transform: translatex(-50%);
+}
+#btn_comment {
+  /* margin: auto; */
+  float: left;
+  margin-left: 2%;
+  margin-bottom: 1%;
+  width: 25%;
+}
+
+#captions {
+  margin-left: 6%;
+  font-size: 16px;
+  color: orangered;
+  width: 100%;
+  text-align: left;
+}
+.caption {
+  border-radius: 8px;
+}
+thead {
+  background: white;
+  color: #e3cd6b;
+  font-size: 20px;
+}
+td {
+  font-size: 16px;
+  color: rgb(255, 153, 0);
+}
+textarea {
+  padding: 10px;
+  color: brown;
+  font-weight: 700;
+  font-family: sans-serif;
+  resize: none;
+  border: none;
+  width: 100%;
+  background: none;
+}
+/* .sidebar ul li a:link {
+  color: #662e16;
+  background: #ffbc87;
+  text-decoration: none;
+} */
+
+/******* Register Form *******/
+/****************************/
+
+.login-page {
+  width: 360px;
+  padding: 10% 0 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 60vh;
+  background-color: transparent;
+  opacity: 0.8;
+  margin: 0 auto;
+  margin-top: 2%;
+  border-radius: 0.2rem;
+}
+
+#home {
+  margin-top: 15%;
+}
+
+.form {
+  position: relative;
+  z-index: 1;
+  max-width: 360px;
+  margin: 0 auto 30px;
+  text-align: center;
+  padding: 45px;
+}
+
+.form input {
+  display: block;
+  font-family: "Courier New", Courier, monospace;
+  background-color: #f2f2f2;
+  border: 0;
+  padding: 8px;
+  font-size: 14px;
+  margin: 0 0 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form button {
+  font-family: "Courier New", Courier, monospace;
+  background-color: transparent;
+  border: 0;
+  color: #ffffff;
+  font-size: 20px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.login-form i {
+  margin-bottom: 5%;
+}
+
+.form button:hover,
+.form button:active {
+  border-radius: 0.2rem;
+}
+
+.form .sms {
+  color: black;
+}
+
+.form .sms a {
+  color: blue;
+}
+
+.form .sms a:hover {
+  text-decoration: underline;
+}
+
+.form .register-form {
+  display: none;
+}

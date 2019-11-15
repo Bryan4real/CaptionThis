@@ -8,8 +8,7 @@
 $(document).ready(function () {
 
 
-
-
+  
   $(".sms a").click(function () {
     $("form").animate({ height: "toggle", opacity: "toggle" }, "slow");
   })
