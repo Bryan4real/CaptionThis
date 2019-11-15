@@ -202,10 +202,11 @@ nav ul li a:hover {
 }
 thead {
   background: white;
-}
-td,
-th {
+  color: #e3cd6b;
   font-size: 20px;
+}
+td {
+  font-size: 16px;
   color: rgb(255, 153, 0);
 }
 textarea {
