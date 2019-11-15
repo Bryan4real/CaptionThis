@@ -27,16 +27,15 @@ body {
   margin-top: 10%;
 }
 
-#prev {
+#prev,
+#prev1,
+#prev2 {
   width: 80%;
   float: right;
   text-align: center;
+  margin-bottom: 5%;
 }
-#prev1 {
-  width: 80%;
-  float: right;
-  text-align: center;
-}
+
 #info {
   width: 100%;
 }

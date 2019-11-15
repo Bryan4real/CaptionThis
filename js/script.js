@@ -40,4 +40,16 @@ $(document).ready(function() {
     }
     event.preventDefault();
   });
+  $("#btn_comment1").click(function(event) {
+    let caption = $("textarea#textarea1").val();
+    captions = new Capt(caption);
+    if (caption != "") {
+      $("#finalorder1").prepend(
+        `<tr><td id="pName1">` + captions.text + `</tr>`
+      );
+    } else {
+      alert("Please enter caption");
+    }
+    event.preventDefault();
+  });
 });
