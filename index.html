@@ -44,88 +44,76 @@
           <li><a href="#">wildlife</a></li>
         </ul>
       </div>
-      <div
+      <!-- <div
         class="image-previewer d-flex justify-content-center align-items-center"
       >
         Preview image
-      </div>
-
-      <div id="themain">
-        <!-- Home section -->
-        <div id="home">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="login-page">
-                  <div class="form">
-                    <form class="register-form">
-                      <input type="text" placeholder="user name" />
-                      <input type="text" placeholder="password" />
-                      <input type="text" placeholder="email" />
-                      <button id="create">Create</button>
-                      <p class="sms">
-                        Have an Account? <a href="#"> LOG IN</a>
-                      </p>
-                    </form>
-
-                    <form class="login-form">
-                      <i class="fa fa-user-o fa-3x" aria-hidden="true"></i>
-                      <input type="text" placeholder="user name" />
-                      <input type="text" placeholder="password" />
-                      <button>LogIn</button>
-                      <p class="sms">
-                        Don't have an Account? <a href="#"> SIGN UP</a>
-                      </p>
-                    </form>
+      </div> -->
+          <div id ="pic_container" class="container">
+            <div id="prev" class="row">
+              <div class="col-md-6">
+                <div class="ImagePreview" id="ImagePreview">
+                  <img src="" alt="image preview" id="image-field">
+                <span class="image-text">Image Preview</span>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div id="captions">
+                    <div class="choice">
+                      <table class="table table-sm  caption">
+                        <textarea type="text" id="textarea"  rows="3" placeholder="Caption This!"></textarea>
+                        <hr>
+                        <button id="btn_comment" class="btn btn-outline-warning btn-block mg-b-5">
+                          POST
+                        </button>
+                        <thead>
+                          <tr>
+                            <th scope="col">Comments</th>
+                          </tr>
+                        </thead>
+                        <tbody id="finalorder">
+                          <tr>
+                            <td id="pName">Caption This!</td>
+                          </tr>
+                        </tbody>
+                      </table>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-
-        <!-- about section -->
-        <div id="about">
-          <div
-            class="container carousel slide"
-            data-ride="carousel"
-            id="slogan"
-          >
-            <div class="row">
-              <div class="col-md-12  black-text text-center text"></div>
-            </div>
-          </div>
-        </div>
-        <br />
-
-        <!-- Category section -->
-        <div id="inpage" class="container ">
-          <div class="controls-top ">
-            <h3></h3>
-          </div>
-          <br />
-
-          <div class="row active">
-            <div class="col-md-4"></div>
-
-            <div class="col-md-8"></div>
-          </div>
-        </div>
-
-        <!-- upload button & pageup arrow -->
+    <div id="themain">
+      <!-- Home section -->
+      <div id="home">
         <div class="container">
-          <div class="row active">
-            <div class="col-md-1"></div>
+              <div class="login-page">
+                <div class="form">
+                  <form class="register-form">
+                    <input type="text" placeholder="user name" />
+                    <input type="text" placeholder="password" />
+                    <input type="text" placeholder="email" />
+                    <button id="create">Create</button>
+                    <p class="sms">Have an Account? <a href="#"> LOG IN</a></p>
+                  </form>
 
-            <div class="col-md-1"></div>
-          </div>
-          <br />
+                  <form class="login-form">
+                    <i class="fa fa-user-o fa-3x" aria-hidden="true"></i>
+                    <input type="text" placeholder="user name" />
+                    <input type="text" placeholder="password" />
+                    <button>LogIn</button>
+                    <p class="sms">
+                      Don't have an Account? <a href="#"> SIGN UP</a>
+                    </p>
+                  </form>
+                </div>
+              </div>
         </div>
       </div>
-      <br />
+      <!-- -->
 
       <div class="upload-image">
-        <a href="#">Upload Image </a><i class="fas fa-plus"></i>
+        <a id="a-upload" href="#">Upload Image </a><i class="fas fa-plus"></i>
+        <input id ="inputImage" type="file" >
       </div>
 
       <!-- end -->
