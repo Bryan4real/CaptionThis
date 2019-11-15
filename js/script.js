@@ -28,6 +28,8 @@ $(document).ready(function() {
 
   $("#a-upload").click(function(event) {
     $("#inputImage").click();
+    $("#image-uploaded").show();
+    $("#comments-upload").show();
   });
 
   $("#btn_comment").click(function(event) {

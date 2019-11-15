@@ -24,16 +24,25 @@ body {
 }
 
 #pic_container {
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 #prev,
 #prev1,
 #prev2 {
-  width: 80%;
+  width: 75%;
   float: right;
   text-align: center;
   margin-bottom: 5%;
+}
+#image-uploaded {
+  display: none;
+}
+#comments-upload {
+  display: none;
+}
+#alert {
+  display: none;
 }
 
 #info {
@@ -51,6 +60,7 @@ body {
   background-color: #e6fad0;
   border: 1px solid #ccc;
   border-radius: 15px;
+  margin-left: 10%;
 }
 
 #ImagePreview {
@@ -98,8 +108,10 @@ nav ul li a:hover {
 }
 
 .logo {
+  position: fixed;
   width: 25%;
-  margin-right: 20%;
+  /* margin-right: 20%; */
+  left: 4%;
 }
 
 /******* Sidebar *******/
