@@ -32,6 +32,11 @@ body {
   float: right;
   text-align: center;
 }
+#prev1 {
+  width: 80%;
+  float: right;
+  text-align: center;
+}
 #info {
   width: 100%;
 }
