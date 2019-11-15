@@ -219,6 +219,11 @@ textarea {
   width: 100%;
   background: none;
 }
+
+#image-field,
+.image-text {
+  display: none;
+}
 /* .sidebar ul li a:link {
   color: #662e16;
   background: #ffbc87;
