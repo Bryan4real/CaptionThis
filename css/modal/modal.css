@@ -1,0 +1,54 @@
+@import url("../css/bootstrap.css");
+@import url("../css/swiper.min.css");
+
+
+/******* Register Form *******/
+/****************************/
+
+#regname, #regmail, #regpass, #regconfirm
+{
+  padding: 5px;
+  border: 1px solid #662E16;
+  width: 100%;
+  border-radius: 5px;
+}
+
+#submit {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 0.2em;
+  background: #662E16;
+  color: #fff;
+  border: none;
+
+}
+
+.modal-body, .modal-header, .modal-footer {
+  background: #E3CD6B;
+  border-bottom: 1px solid #662E16;
+}
+
+.modal-title {
+  color: #662E16;
+}
+
+/* Sign In */
+#user, #mail, #pass {
+  padding: 5px;
+  border: 1px solid #662E16;
+  width: 100%;
+  border-radius: 5px;
+}
+
+#log-in {
+
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 0.2em;
+  background: #662E16;
+  color: #fff;
+  border: none;
+
+}
