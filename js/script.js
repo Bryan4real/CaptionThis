@@ -35,6 +35,7 @@ $(document).ready(function() {
     captions = new Capt(caption);
     if (caption != "") {
       $("#finalorder").prepend(`<tr><td id="pName">` + captions.text + `</tr>`);
+      $("#textarea").val("");
     } else {
       alert("Please enter caption");
     }
@@ -47,6 +48,7 @@ $(document).ready(function() {
       $("#finalorder1").prepend(
         `<tr><td id="pName1">` + captions.text + `</tr>`
       );
+      $("#textarea1").val("");
     } else {
       alert("Please enter caption");
     }
@@ -59,6 +61,7 @@ $(document).ready(function() {
       $("#finalorder2").prepend(
         `<tr><td id="pName2">` + captions.text + `</tr>`
       );
+      $("#textarea2").val("");
     } else {
       alert("Please enter caption");
     }
