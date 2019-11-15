@@ -28,6 +28,8 @@ $(document).ready(function() {
 
   $("#a-upload").click(function(event) {
     $("#inputImage").click();
+    $("#image-uploaded").show();
+    $("#comments-upload").show();
   });
 
   $("#btn_comment").click(function(event) {
@@ -35,6 +37,33 @@ $(document).ready(function() {
     captions = new Capt(caption);
     if (caption != "") {
       $("#finalorder").prepend(`<tr><td id="pName">` + captions.text + `</tr>`);
+      $("#textarea").val("");
+    } else {
+      alert("Please enter caption");
+    }
+    event.preventDefault();
+  });
+  $("#btn_comment1").click(function(event) {
+    let caption = $("textarea#textarea1").val();
+    captions = new Capt(caption);
+    if (caption != "") {
+      $("#finalorder1").prepend(
+        `<tr><td id="pName1">` + captions.text + `</tr>`
+      );
+      $("#textarea1").val("");
+    } else {
+      alert("Please enter caption");
+    }
+    event.preventDefault();
+  });
+  $("#btn_comment2").click(function(event) {
+    let caption = $("textarea#textarea2").val();
+    captions = new Capt(caption);
+    if (caption != "") {
+      $("#finalorder2").prepend(
+        `<tr><td id="pName2">` + captions.text + `</tr>`
+      );
+      $("#textarea2").val("");
     } else {
       alert("Please enter caption");
     }

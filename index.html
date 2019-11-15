@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="css/modal/modal.css" type="text/css">
   </head>
 
-  <body id="body">
+  <body >
     <div class="container-fluid">
       <!-- Navigation section -->
       <nav class=" bg-black mt-4">
@@ -103,8 +103,8 @@
       <div class="sidebar">
         <h4>categories</h4>
         <ul>
-          <li><a href="#">sports</a></li>
-          <li><a href="#">politics</a></li>
+          <li><a href="#prev1">sports</a></li>
+          <li><a href="#prev2">politics</a></li>
           <li><a href="#">hillarious</a></li>
           <li><a href="#">food</a></li>
           <li><a href="#">wildlife</a></li>
@@ -117,13 +117,13 @@
       </div> -->
           <div id ="pic_container" class="container">
             <div id="prev" class="row">
-              <div class="col-md-6">
+              <div class="col-md-6" id="image-uploaded">
                 <div class="ImagePreview" id="ImagePreview">
                   <img src="" alt="image preview" id="image-field">
                 <span class="image-text">Image Preview</span>
                 </div>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-6" id="comments-upload">
                 <div id="captions">
                     <div class="choice">
                       <table class="table table-sm  caption">
@@ -147,6 +147,66 @@
                 </div>
               </div>
             </div>
+            <div id="prev1" class="row">
+              <div class="col-md-6">
+                <div class="ImagePreview" id="ImagePreview">
+                  <img src="images/sports.jpg" alt="image preview" id="image-field">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div id="captions">
+                  <div class="choice">
+                    <table class="table table-sm  caption">
+                      <textarea type="text" id="textarea1" rows="3" placeholder="Caption This!"></textarea>
+                      <hr>
+                      <button id="btn_comment1" class="btn btn-outline-warning btn-block mg-b-5">
+                        POST
+                      </button>
+                      <thead>
+                        <tr>
+                          <th scope="col">Comments</th>
+                        </tr>
+                      </thead>
+                      <tbody id="finalorder1">
+                        <tr>
+                          <td id="pName1">Caption This!</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div id="prev2" class="row">
+            <div class="col-md-6">
+              <div class="ImagePreview" id="ImagePreview">
+                <img src="images/adventure-backlit-climb-2669181.jpg" alt="image preview" id="image-field">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div id="captions">
+                <div class="choice">
+                  <table class="table table-sm  caption">
+                    <textarea type="text" id="textarea2" rows="3" placeholder="Caption This!"></textarea>
+                    <hr>
+                    <button id="btn_comment2" class="btn btn-outline-warning btn-block mg-b-5">
+                      POST
+                    </button>
+                    <thead>
+                      <tr>
+                        <th scope="col">Comments</th>
+                      </tr>
+                    </thead>
+                    <tbody id="finalorder2">
+                      <tr>
+                        <td id="pName2">Caption This!</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
           </div>
     <div id="themain">
       <!-- Home section -->
